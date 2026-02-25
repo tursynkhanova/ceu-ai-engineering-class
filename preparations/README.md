@@ -11,7 +11,7 @@ Your AWS user has been reset. Please log back in using the default password:
 AWS will ask you to change your password once you log in. Please take note of your new password
 
 Once you've logged in, click _Security Credentials_ in your Profile (top-right corner) _Create Access Key_ (use case: _Other_, no tags required) and save your _Access Key_ and _Secret access key_.  
-![AWS Access Key](Brave%20Browser%202026-02-25%2015.09.06.png)
+<img src="Brave%20Browser%202026-02-25%2015.09.06.png" width="50%">
 ## 
 OpenAI API
 *We'll use OpenAI for Model Tracing - a debug interface about how Agents work*
@@ -34,9 +34,9 @@ Use the _GitHub_ signup option - this way, Render will have access to your GitHu
 ## EXA Search
 *We'll use EXA's Agentic MCP endpoint to let agents do a web search*
 * URL: https://exa.ai
-* "Try API for free": ![EXA Sign Up](Obsidian%202026-02-25%2014.48.29.png)
+* "Try API for free": <img src="Obsidian%202026-02-25%2014.48.29.png" width="50%">
 * You'll probably need to use a gmail address to sign up (at least I only succeeded with "Google Login")
-* Select these: ![EXA Options](Pasted%20image%2020260225145052.png)
+* Select these: <img src="Pasted%20image%2020260225145052.png" width="50%">
 * Choose "Compact"
 * Copy and save your EXA API key. We'll need it in class.
 

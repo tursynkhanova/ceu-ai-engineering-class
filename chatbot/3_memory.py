@@ -11,7 +11,7 @@ dotenv.load_dotenv()
 
 @cl.on_chat_start
 async def on_chat_start():
-    session = SQLiteSession("conversation_history")
+    session = SQLiteSession("conversation_history") #create a memory object
     cl.user_session.set("agent_session", session)
 
 
@@ -19,7 +19,7 @@ async def on_chat_start():
 async def on_message(message: cl.Message):
     session = cl.user_session.get("agent_session")
 
-    result = Runner.run_streamed(nutrition_agent, message.content, session=session)
+    result = Runner.run_streamed(nutrition_agent, message.content, session=session) #pass the memory object
 
     msg = cl.Message(content="")
     async for event in result.stream_events():

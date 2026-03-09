@@ -39,8 +39,7 @@ def bedrock_tool(tool: dict) -> FunctionTool:
 
 chroma_path = Path("chroma")
 chroma_client = chromadb.PersistentClient(path=str(chroma_path))
-tarot_cards_rag = chroma_client.get_collection(name="tarot_cards_rag")
-
+tarot_cards_rag = chroma_client.get_or_create_collection(name="tarot_cards_rag")
 
 TAROT_DECK = [
     "The Fool", "The Magician", "The High Priestess", "The Empress", "The Emperor",
